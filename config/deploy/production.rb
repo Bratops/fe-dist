@@ -3,7 +3,6 @@ set :branch, "master"
 
 set :deploy_to, "/home/#{fetch(:deployer)}/app/#{fetch(:application)}"
 
-set :nginx_server_name, "bebras01.csie.ntnu.edu.tw"
 set :enable_ssl, false
 
 role :app, %w{nsn@devi7.us.to}
