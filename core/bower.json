@@ -1,6 +1,6 @@
 {
   "name": "bras-fe",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "dependencies": {
     "angular": ">=1.2.*",
     "json3": "~3.3.1",
@@ -15,7 +15,8 @@
     "angular-ui-router": "~0.2.10",
     "skeleton-sass": "~2.0.2",
     "restangular": "~1.4.0",
-    "sass-css3-mixins": "*"
+    "sass-css3-mixins": "*",
+    "angular-scroll": "~0.6.1"
   },
   "devDependencies": {
     "angular-mocks": ">=1.2.*",
