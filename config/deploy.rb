@@ -11,7 +11,7 @@ set :log_level, :debug
 set :pty, true
 
 # Default value for :linked_files is []
-# set :linked_files, %w{config/database.yml}
+set :linked_files, %w{.bowerrc} #config/database.yml}
 # Default value for linked_dirs is []
 set :linked_dirs, %w{log node_modules public/blib}
 # Default value for default_env is {}
@@ -42,12 +42,12 @@ namespace :deploy do
       # execute :touch, release_path.join('tmp/restart.txt')
       path = "/home/nsn/.nvm/v0.10.30/bin:/home/nsn/.rbenv/bin:/home/nsn/.rbenv/bin:/home/nsn/.local/bin:/usr/local/bin:/usr/local/sbin:/home/nsn/.rbenv/shims:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
       cmd = "export PATH=#{path}"
-      cmd += "&& cd #{current_path}"
-      cmd += "&& source ~/.nvm/nvm.sh"
-      cmd += "&& nvm use 0.10.30"
-      cmd += "&& npm install &>! log/npm.install.log"
-      cmd += "&& bower install &>! log/bower.install.log"
-      cmd += "&& service bras restart"
+      cmd += " && cd #{current_path}"
+      cmd += " && source ~/.nvm/nvm.sh"
+      cmd += " && nvm use 0.10.30"
+      cmd += " && npm install &>! log/npm.install.log"
+      cmd += " && bower install &>! log/bower.install.log"
+      cmd += " && service bras restart"
       execute cmd
     end
   end
