@@ -1,6 +1,6 @@
 {
   "name": "bras-fe",
-  "version": "0.1.2",
+  "version": "0.2.1",
   "dependencies": {
     "angular": ">=1.2.*",
     "json3": "~3.3.1",
@@ -28,7 +28,8 @@
     "ng-flow": "~2",
     "checklist-model": "~0.1.3",
     "angular-youtube-mb": "~0.1.2",
-    "angular-classy": "~0.4.2"
+    "angular-classy": "~0.4.2",
+    "angular-ui-utils": "bower-event"
   },
   "devDependencies": {
     "angular-mocks": ">=1.2.*",
